@@ -1,4 +1,4 @@
-#include "melody.h"
+#include "main.h"
 
 /**
  * main - prints _putchar
