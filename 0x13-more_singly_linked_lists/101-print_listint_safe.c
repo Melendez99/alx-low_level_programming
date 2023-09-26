@@ -12,11 +12,11 @@ size_t print_listint_safe(const listint_t *head)
 	size_t new_n;
 
 	tmp = head;
-	while (tmp_n)
+	while (tmp)
 	{
 		printf("[%p] %d\n", (void *)tmp, tmp->n);
 		counter++;
-		tmp_n = tmp->next;
+		tmp = tmp->next;
 		l_n = head;
 		new_n = 0;
 		while (new_n < counter)
