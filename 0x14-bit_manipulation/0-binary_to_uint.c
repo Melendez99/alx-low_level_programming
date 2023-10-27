@@ -2,7 +2,7 @@
 
 /**
  * binary_to_uint - Converts binary to unsigned int
- * @b: Pointer to string 
+ * @b: Pointer to string
  * Return: Converted number 0r 0 if there is one or more chars in the string
  */
 
