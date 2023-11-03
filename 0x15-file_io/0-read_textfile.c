@@ -7,7 +7,6 @@
  * @letters: number of letters the function reads and prints
  * Return: If the function fails or filename is NULL - 0.
  */
-	
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t O, W, R;
@@ -17,12 +16,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	buffer = malloc(sizeof(char) * letters);
-	if (b == NULL)
+	if (buffer == NULL)
 		return (0);
 
 	O = open(filename, O_RDONLY);
-	R = read(o, buffer, letters);
-	W = write(STDOUT_FILENO, buffer, r);
+	R = read(O, buffer, letters);
+	W = write(STDOUT_FILENO, buffer, R);
 
 	if (O == -1 || R == -1 || W == -1 || W != R)
 	{
@@ -31,7 +30,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	free(buffer);
-	close(o);
+	close(O);
 
 	return (W);
 }
